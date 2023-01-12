@@ -15,9 +15,14 @@ const userSchema = new mongoose.Schema({
 		type: String,
 		unique: true
 	},
-	userType : {
+	DOB : {
 		required: false,
 		type: String,
+		unique: true
+	},
+	userType : {
+		required: false,
+		type: String, //patient,partner,admin
 	},
 	profileImageUrl : {
 		required: false,
@@ -78,7 +83,7 @@ const userSchema = new mongoose.Schema({
 		type: String,
 		default: ''
 	},
-    deviceId :{
+    deviceId :{ 
 		required : false,
 		type: String,
 		default: ''
