@@ -15,7 +15,7 @@ const userSchema = new mongoose.Schema({
 		type: String,
 		unique: true
 	},
-	DOB : {
+	DOB : {        // only for patient
 		required: false,
 		type: String,
 		unique: true
@@ -23,6 +23,11 @@ const userSchema = new mongoose.Schema({
 	userType : {
 		required: false,
 		type: String, //patient,partner,admin
+	},
+	healthActivity : {    // only for patient
+		required: false,
+		type: Array,
+		default:''
 	},
 	profileImageUrl : {
 		required: false,
