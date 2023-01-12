@@ -16,4 +16,4 @@ const healthActivitySchema = new mongoose.Schema({
 	},
 })
 
-module.exports = mongoose.model('healthActivity',healthActivity)
+module.exports = mongoose.model('healthActivity',healthActivitySchema)
